@@ -1,3 +1,32 @@
-<section class="h-screen w-screen">
-  <router-outlet></router-outlet>
-</section>
+<header>
+  <h1>Welcome to Router Demo !</h1>
+  <nav>
+    <ul>
+        <li>
+            <a routerLink="//">Accueil</a>
+        </li>
+        <li>
+            <a routerLink="/presentation/">Présentation</a>
+        </li>
+        <li>
+            <a routerLink="/experience/">Expériences</a>
+        </li>
+        <li>
+            <a routerLink="/formation/">Formation</a>
+        </li>
+        <li>
+        <a routerLink="/contact/">Contact</a>
+      </li>
+    </ul>
+  </nav>
+ </header>
+ <body>
+  <main>
+    <router-outlet></router-outlet>
+    <!-- Component will be inserted here! -->
+  </main>
+</body>
+<footer>
+  <p>Un site fièrement présenté par Laurène GEORGES</p>
+</footer>
+ 
