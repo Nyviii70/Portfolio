@@ -1,32 +1,81 @@
-<header>
-  <h1>Welcome to Router Demo !</h1>
-  <nav>
-    <ul>
-        <li>
-            <a routerLink="//">Accueil</a>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+ <body class="bg-slate-200">
+  <nav class="p-10 bg-emerald-600 text-white shadow md:flex md:items-center md: justify-between">
+    <ul class="md:flex md:items-center">
+        <li class="mx-20 my-6 md:my-0">
+          <img class="h-20 inline"src="https://zupimages.net/up/22/24/rd5a.png">
         </li>
-        <li>
-            <a routerLink="/presentation/">Présentation</a>
+        <li class="mx-20 my-6 md:my-0">
+          <i class='fa fa-home'></i>
+            <a routerLink="//" class="text-xl hover:text-amber-400 duration-500">Accueil</a>
         </li>
-        <li>
-            <a routerLink="/experience/">Expériences</a>
+        <li class="mx-20 my-6 md:my-0">
+          <i class='fa fa-user'></i>
+            <a routerLink="/presentation/" class="text-xl hover:text-amber-400 duration-500">Présentation</a>
         </li>
-        <li>
-            <a routerLink="/formation/">Formation</a>
+        <li class="mx-20 my-6 md:my-0">
+          <i class="fa fa-folder-open"></i>
+            <a routerLink="/experience/" class="text-xl hover:text-amber-400 duration-500">Expériences</a>
         </li>
-        <li>
-        <a routerLink="/contact/">Contact</a>
+        <li class="mx-20 my-6 md:my-0">
+          <i class="fa fa-book"></i>
+            <a routerLink="/formation/" class="text-xl hover:text-amber-400 duration-500">Formation</a>
+        </li>
+        <li class="mx-20 my-6 md:my-0">
+          <i class="fa fa-phone"></i>
+        <a routerLink="/contact/" class="text-xl hover:text-amber-400 duration-500">Contact</a>
       </li>
     </ul>
   </nav>
- </header>
- <body>
   <main>
     <router-outlet></router-outlet>
     <!-- Component will be inserted here! -->
   </main>
+  <footer>
+    <div class="p-10 bg-emerald-600 text-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          <div class="mb-5">
+            <h4 class="text-2xl pb-4">Où-suis-je ?</h4>
+            Vous êtes sur mon portfolio !<br><br>
+            Ici, j'essaie de me présenter au de façon ludique !<br><br>
+            Clairement, j'ai fait ce projet pour m'amuser et pour gagner en visibilité !
+          </div>
+          <div class="mb-5">
+            <h4 class="text-2xl pb-4">Plan du site</h4>
+            <ul>
+              <li class="pb-4"><a href="/" class="hover:text-amber-400 duration-500">Accueil</a></li>
+              <li class="pb-4"><a href="presentation/" class="hover:text-amber-400 duration-500">Présentation</a></li>
+              <li class="pb-4"><a href="experience/" class="hover:text-amber-400 duration-500">Expériences</a></li>
+              <li class="pb-4"><a href="formation/" class="hover:text-amber-400 duration-500">Formation</a></li>
+              <li class="pb-4"><a href="contact/" class="hover:text-amber-400 duration-500">Contact</a></li>
+            </ul>
+          </div>
+          <div class="mb-5">
+            <h4 class="text-2xl pb-4">Créatrice</h4>
+            Laurène GEORGES<br>
+            Montpellier et 20km alentours<br>
+            Permis A et B<br>
+            Véhiculée<br>
+            Télétravail : OK<br><br>
+            <strong>Téléphone : </strong>07.70.40.60.58<br>
+            <strong>Email : </strong>georgeslaurene70@gmail.com<br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full bg-emerald-600 text-white px-10">
+      <div class="max-w-7xl flex-col sm:flew-row py-4 mx-auto justify-between items-center">
+        <div class="text-center text-xl text-white mb-2">
+          <a href="https://github.com/Nyviii70" class="w-10 h10 rounded-full bg-amber-400 hover:bg-amber-500  duration-500 first-letter:mx-1 inline-block pt-1"><i class="fa fa-github"></i></a>
+          <a href="https://github.com/Nyviii70" class="w-10 h10 rounded-full bg-amber-400 hover:bg-amber-500 duration-500 mx-1 inline-block pt-1"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- <p>Un site fièrement présenté par Laurène GEORGES</p> -->
+  </footer>
 </body>
-<footer>
-  <p>Un site fièrement présenté par Laurène GEORGES</p>
-</footer>
+
  
