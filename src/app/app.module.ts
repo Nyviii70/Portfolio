@@ -18,7 +18,7 @@ import { ErrorComponent } from './error/error.component';
     ExperienceComponent,
     FormationComponent,
     ContactComponent,
-    ErrorComponent
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
