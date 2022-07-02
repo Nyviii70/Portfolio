@@ -9,7 +9,6 @@ import { ExperienceComponent } from './experience/experience.component';
 import { FormationComponent } from './formation/formation.component';
 import { ContactComponent } from './contact/contact.component';
 import { ErrorComponent } from './error/error.component';
-
 @NgModule({
   declarations: [
     AppComponent,

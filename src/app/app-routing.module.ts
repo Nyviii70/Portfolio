@@ -21,6 +21,10 @@ const routes: Routes = [
     component: PresentationComponent
   },
   {
+    path: 'presentation',
+    component: PresentationComponent
+  },
+  {
     path: 'experience',
     component: ExperienceComponent
   },
