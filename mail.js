@@ -42,3 +42,40 @@ app.listen,(PORT, ()=>{
 })
 
 console.log('ceci est la fin du script')
+
+
+
+
+// const { info } = require ("console");
+// const { appendFile } = require("fs");
+// const nodemailer = require("nodemailer")
+
+// const PORT = process.env.PORT || 5000;
+
+// app.get('/', (req,res)=>{
+//     res.sendFile(__dirname + '/app/src/contact.component.html')
+// })
+
+// // "send" function creation in async (wait send's request and its response)
+// module.exports.send = async function(){
+//   const transporter = nodemailer.createTransport({
+//     service: "gmail",
+//     auth: {
+//       user: "georgeslaurene70@gmail.com",
+//       pass: "oiedgltgzepvgnul",
+//     }
+//   })
+//   const mailOption = {
+//     from: req.body.email,
+//     to: "georgeslaurene70@gmail.com",
+//     subject: `Message de ${req.name}: provenant du portfolio`,
+//     text: req.body.subject
+//   }
+//   await transporter.sendMail(mailOption, function(err, info){
+//     if (err) {
+//         console.log(err)
+//     } else {
+//       console.log("email sent: " + info.response)
+//     }
+//   })
+// }

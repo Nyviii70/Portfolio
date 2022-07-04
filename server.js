@@ -13,62 +13,59 @@ job.start()
 
 
 
-// const PORT = 8080;
+// const express = require('express');
+// const app = express();
 
-// const public_path = `http://localhost:${PORT}/`;
+// const nodemailer = require("nodemailer");
 
-// app.get()
+// const PORT = process.env.PORT || 5000;
+// // middleware
+// app.use(express.static('public'));
+// app.use(express.json())
 
 
-
-// let http = require('http')
-
-// // utilisation de la méthode "creatserver"
-// let server = http.createServer()
-// // on indique que la fonction a besoin d'une requête et d'une réponse
-// server.on('request', function (request, response) {
-//   // le "writeHed" permet d'indiquer un code d'erreur
-//   response.writeHead(200, {
-//     // le "content-type" permet d'indiquer que ça doit être interprété en html
-//     'Content-type': 'text/html; charset=utf-8'
-//   })
-//   response.end('salut, commet ça va ?')
-
+// app.get('/', (req, res)=>{
+//   res.sendFile(__dirname + '/app/src/contact.component.html')
 // })
 
-// server.listen(8080)
+// app.post('/', (req,res)=>{
+//   console.log(req.body);
+//   // const transporter = nodemailer.createTransport({
+//   //   service: "gmail",
+//   //   auth: {
+//   //     user: "georgeslaurene70@gmail.com",
+//   //     pass: "oiedgltgzepvgnul",
+//   //   }
 
-
-
-
-// const mailjet = require ('node-mailjet')
-// .connect('****************************1234', '****************************abcd')
-// const request = mailjet
-// .post("send", {'version': 'v3.1'})
-// .request({
-//   "Messages":[
-//     {
-//       "From": {
-//         "Email": "georgeslaurene70@gmail.com",
-//         "Name": "Laurène"
-//       },
-//       "To": [
-//         {
-//           "Email": "georgeslaurene70@gmail.com",
-//           "Name": "Laurène"
-//         }
-//       ],
-//       "Subject": "Greetings from Mailjet.",
-//       "TextPart": "My first Mailjet email",
-//       "HTMLPart": "<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>!</h3><br />May the delivery force be with you!",
-//       "CustomID": "AppGettingStartedTest"
+//   const transport = nodemailer.createTransport({
+//     port: 5000,
+//     auth: {
+//           user: "georgeslaurene70@gmail.com",
+//           pass: "oiedgltgzepvgnul",
 //     }
-//   ]
+//   });
+
+
+//   const mailOptions = {
+//     fro: req.body.email,
+//     to: "georgeslaurene70@gmail.com",
+//     subject: `Message de ${req.name}: provenant du portfolio`,
+//     text: req.body.message
+//   }
+
+//   transporter.sendMail(mailOptions, (error, info)=>{
+//     if(error){
+//       console.log(error);
+//       res.send('error');
+//     }else{
+//       console.log('Email sent: ' + info.response)
+//       res.send('success')
+//     }
+//   })
 // })
-// request
-//   .then((result) => {
-//     console.log(result.body)
-//   })
-//   .catch((err) => {
-//     console.log(err.statusCode)
-//   })
+
+// app.listen,(PORT, ()=>{
+//   console.log(`server running on port ${PORT}`)
+// })
+
+// console.log ("ok")

@@ -10,6 +10,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { FormationComponent } from './formation/formation.component';
 import { ContactComponent } from './contact/contact.component';
 import { ErrorComponent } from './error/error.component';
+import { PlayComponent } from './play/play.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { ErrorComponent } from './error/error.component';
     FormationComponent,
     ContactComponent,
     ErrorComponent,
+    PlayComponent,
   ],
   imports: [
     BrowserModule,

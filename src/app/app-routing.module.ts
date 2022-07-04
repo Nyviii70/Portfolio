@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { FormationComponent } from './formation/formation.component';
+import { PlayComponent } from './play/play.component';
 import { ContactComponent } from './contact/contact.component';
 import { ErrorComponent } from './error/error.component';
 
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'formation',
     component: FormationComponent
+  },
+  {
+    path: 'play',
+    component: PlayComponent
   },
   {
     path: 'contact',
