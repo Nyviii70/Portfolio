@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="play.component.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-red-400 text-4xl pt-6 pl-10 text-center">Shifumi !</h1><br>
+      <p>Cliquez sur l'une des icônes (pierre, feuille ou ciseaux) et voyez si vous avez battu l'ordinateur !</p>
+      <br>
+      <p id="player_score">Votre score : 0</p>
+      <p id="computor_score">Score de l'adversaire : 0</p>
+    </header>
+
+    <main>
+      <div id="boutons">
+        <button id="stone" class="btn"><p>🧱</p></button>
+        <button id="paper" class="btn"><p>📃</p></button>
+        <button id="cisor" class="btn"><p>✂</p></button>
+      </div>
+      <div id="display">
+        <span id="main_player"></span>
+        <span id="issue"></span>
+        <span id="main_computer"></span>
+      </div>
+      <div id="replay">
+        <br>
+        <p>Cliquez sur ce bouton pour remettre les scores à 0 !</p>
+        <button id="btn-replay" class="btn_replay"><p>⏯</p></button>
+      </div>
+    </main>
+    <script src="play.component.ts"></script>
+  </body>
+</html>

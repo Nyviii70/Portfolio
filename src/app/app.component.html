@@ -1,35 +1,37 @@
+<!-- HEADER -->
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
  <body class="bg-white">
     <nav class="opacity-75 p-4 text-lg bg-slate-800 text-white shadow md:flex md:items-center md: justify-between sticky top-0 z-50 px-4">
       <ul class="md:flex md:items-center">
-          <li class="mx-14 my-6 md:my-0">
-              <a routerLink="//" class="text-xl hover:text-pink-400 duration-500"><i class='mx-5 fa fa-home hover:text-pink-400 duration-400'></i>Accueil</a>
-          </li>
-          <li class="mx-14 my-6 md:my-0">
-              <a routerLink="/presentation/" class="text-xl hover:text-pink-400 duration-500"><i class='mx-5 fa fa-user hover:text-pink-400 duration-400'></i>Présentation</a>
-          </li>
-          <li class="mx-14 my-6 md:my-0">
-              <a routerLink="/experience/" class="text-xl hover:text-pink-400 duration-500"><i class="mx-5 	fa fa-code hover:text-pink-400 duration-400"></i>Expériences</a>
-          </li>
-          <li class="mx-14 my-6 md:my-0">
-              <a routerLink="/formation/" class="text-xl hover:text-pink-400 duration-500"><i class="mx-5 fa fa-book hover:text-pink-400 duration-400"></i>Formation</a>
-          </li>
-          <li class="mx-14 my-6 md:my-0">
-            <a routerLink="/play/" class="text-xl hover:text-pink-400 duration-500"><i class="mx-5 fa fa-gamepad hover:text-pink-400 duration-400"></i>Let's play</a>
+        <li class="mx-14 my-6 md:my-0">
+          <p routerLink="" class="text-xl text-slate-800"><i class='mx-5 fa fa-home hover:text-slate-800 duration-400'></i>Accueil</p>
         </li>
-          <li class="mx-14 my-6 md:my-0">
-          <a routerLink="/contact/" class="text-xl hover:text-pink-400 duration-500"><i class="mx-5 fa fa-phone hover:text-pink-400 duration-400"></i>Contact</a>
+        <li class="mx-14 my-6 md:my-0">
+          <a routerLink="//" class="text-xl hover:text-red-400 duration-500"><i class='mx-5 fa fa-home hover:text-red-400 duration-400'></i>Accueil</a>
+        </li>
+        <li class="mx-14 my-6 md:my-0">
+          <a routerLink="/presentation/" class="text-xl hover:text-red-400 duration-500"><i class='mx-5 fa fa-user hover:text-red-400 duration-400'></i>Présentation</a>
+        </li>
+        <li class="mx-14 my-6 md:my-0">
+          <a routerLink="/experience/" class="text-xl hover:text-red-400 duration-500"><i class="mx-5 	fa fa-code hover:text-red-400 duration-400"></i>Expériences</a>
+        </li>
+        <li class="mx-14 my-6 md:my-0">
+          <a routerLink="/formation/" class="text-xl hover:text-red-400 duration-500"><i class="mx-5 fa fa-book hover:text-red-400 duration-400"></i>Formation</a>
+        </li>
+        <li class="mx-14 my-6 md:my-0">
+          <a routerLink="/play/" class="text-xl hover:text-red-400 duration-500"><i class="mx-5 fa fa-gamepad hover:text-red-400 duration-400"></i>Let's play</a>
         </li>
       </ul>
     </nav>
   
+    <!-- ROUTER -->
   <main>
       <router-outlet></router-outlet>
-      <!-- Component will be inserted here -->
   </main>
 
+  <!-- FOOTER -->
   <footer class="opacity-75 inset-x-0 bottom-0">
     <div class="p-10 bg-slate-800 text-white">
       <div class="max-w-7xl mx-auto">
@@ -43,23 +45,18 @@
           <div class="mb-5">
             <h4 class="text-2xl pb-4">Plan du site</h4>
             <ul>
-              <li class="pb-4"><a href="/" class="hover:text-pink-400 duration-500">Accueil</a></li>
-              <li class="pb-4"><a href="presentation/" class="hover:text-pink-400 duration-500">Présentation professionnelle</a></li>
-              <li class="pb-4"><a href="experience/" class="hover:text-pink-400 duration-500">Expériences</a></li>
-              <li class="pb-4"><a href="play/" class="hover:text-pink-400 duration-500">Let's play</a></li>
-              <li class="pb-4"><a href="formation/" class="hover:text-pink-400 duration-500">Formation</a></li>
-              <li class="pb-4"><a href="contact/" class="hover:text-pink-400 duration-500">Contact</a></li>
+              <li class="pb-4"><a href="/" class="hover:text-red-400 duration-500">Accueil</a></li>
+              <li class="pb-4"><a href="presentation/" class="hover:text-red-400 duration-500">Présentation professionnelle</a></li>
+              <li class="pb-4"><a href="experience/" class="hover:text-red-400 duration-500">Expériences</a></li>
+              <li class="pb-4"><a href="formation/" class="hover:text-red-400 duration-500">Formation</a></li>
+              <li class="pb-4"><a href="play/" class="hover:text-red-400 duration-500">Let's play</a></li>
             </ul>
           </div>
           <div class="mb-5">
             <h4 class="text-2xl pb-4">Créatrice</h4>
             Laurène GEORGES<br>
-            Montpellier et 20km alentours<br>
-            Permis A et B<br>
-            Véhiculée<br>
-            Télétravail total ou partiel : OK<br><br>
             <strong>Téléphone : </strong>07.70.40.60.58<br>
-            <strong>Email : </strong><a class="hover:text-pink-400 duration-500" href="mailto:">georgeslaurene70@gmail.com</a><br>
+            <strong>Email : </strong>georgeslaurene70@gmail.com<br>
           </div>
         </div>
       </div>
@@ -67,12 +64,11 @@
     <div class="w-full bg-slate-800 text-white px-10">
       <div class="max-w-7xl flex-col sm:flew-row py-4 mx-auto justify-between items-center">
         <div class="text-center text-xl text-white mb-2">
-          <a href="https://github.com/Nyviii70" target="_blank" class="w-10 h10 rounded-full bg-teal-400 hover:bg-teal-500  duration-500 first-letter:mx-1 inline-block pt-1"><i class="fa fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/lg-pro/" target="_blank" class="w-10 h10 rounded-full bg-teal-400 hover:bg-teal-500 duration-500 mx-1 inline-block pt-1"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/Nyviii70" target="_blank" class="w-10 h10 rounded-full bg-purple-400 hover:bg-purple-500  duration-500 first-letter:mx-1 inline-block pt-1"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/lg-pro2/" target="_blank" class="w-10 h10 rounded-full bg-purple-400 hover:bg-purple-500 duration-500 mx-1 inline-block pt-1"><i class="fa fa-linkedin"></i></a>
         </div>
       </div>
     </div>
-    <!-- <p>Un site fièrement présenté par Laurène GEORGES</p> -->
   </footer>
 </body>
 

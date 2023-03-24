@@ -6,12 +6,11 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { FormationComponent } from './formation/formation.component';
 import { PlayComponent } from './play/play.component';
-import { ContactComponent } from './contact/contact.component';
 import { ErrorComponent } from './error/error.component';
 
 // ROUTING
 const routes: Routes = [
-  // the first property is the route's name and the second is the associated component
+  // the first property is the path the second is the route's name and the third associated component
   {
     path: '',
     pathMatch: 'full',
@@ -36,10 +35,6 @@ const routes: Routes = [
   {
     path: 'play',
     component: PlayComponent
-  },
-  {
-    path: 'contact',
-    component: ContactComponent
   },
   {
     path: '**',

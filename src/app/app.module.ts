@@ -8,7 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { FormationComponent } from './formation/formation.component';
-import { ContactComponent } from './contact/contact.component';
 import { ErrorComponent } from './error/error.component';
 import { PlayComponent } from './play/play.component';
 @NgModule({
@@ -18,7 +17,6 @@ import { PlayComponent } from './play/play.component';
     PresentationComponent,
     ExperienceComponent,
     FormationComponent,
-    ContactComponent,
     ErrorComponent,
     PlayComponent,
   ],
